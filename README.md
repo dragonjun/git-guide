@@ -1,5 +1,22 @@
 # Git-Guide
 
+## 설정
+
+```bash
+git config --global user.name "Yongjun Cho"
+git config --global user.email wphhffg@gmail.com
+git config --global init.defaultBranch main
+git config --global core.autocrlf input
+
+git config --global core.editor vim
+git config --global core.editor "code --wait"
+
+git config -l --show-origin
+git config -l --show-scope
+```
+
+## Three Trees
+
 ![Three Trees](./images/three-trees.png)
 
 ## restore
