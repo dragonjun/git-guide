@@ -25,3 +25,10 @@ $ git restore --staged <file>
 ```bash
 $ git restore --source=HEAD --staged --worktree <file>
 ```
+
+## Line Endings
+
+다음 두 글을 참고한다.
+
+- [Configuring Git to handle line endings](https://docs.github.com/en/free-pro-team@latest/github/using-git/configuring-git-to-handle-line-endings)
+- [Mind the End of Your Line](https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/)
