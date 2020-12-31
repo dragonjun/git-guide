@@ -42,6 +42,26 @@ git config --global difftool."default-difftool".cmd "code --wait --diff \$LOCAL 
 
 ![Three Trees](./images/three-trees.png)
 
+## diff
+
+working directory, index, commit(HEAD) 비교
+
+```bash
+(1) git diff                        (a) index         <---> (b) working directory
+(2) git diff <commit>               (a) <commit>      <---> (b) working directory
+(3) git diff --staged [<commit>]    (a) <commit>=HEAD <---> (b) index
+```
+
+- (1) working directory 에서 수정한 파일을 index 와 비교한다.
+- (2) working directory 에서 수정한 파일을 commit 과 비교한다. 현재 branch 의 가장 최근 commit 과 비교하려면 HEAD 를 지정한다.
+- (3) 지정된 commit 과 index 를 비교한다. commit 를 생략하면 기본으로 HEAD 가 지정된다.
+
+두 commit 간의 비교
+
+```bash
+git diff <commit> <commit>
+```
+
 ## restore
 
 ```bash
