@@ -9,10 +9,33 @@ git config --global init.defaultBranch main
 git config --global core.autocrlf input
 
 git config --global core.editor vim
-git config --global core.editor "code --wait"
 
 git config -l --show-origin
 git config -l --show-scope
+```
+
+### VS Code 를 Git 에디터로 사용하기
+
+- [VS Code as Git editor](https://code.visualstudio.com/docs/editor/versioncontrol#_vs-code-as-git-editor) 를 참고한다.
+
+```bash
+git config --global core.editor "code --wait"
+```
+
+VS Code 를 diff tool로 사용하기
+
+- PowerShell 에서는 다음 커맨드를 사용한다.
+
+```powershell
+git config --global diff.tool default-difftool
+git config --global difftool."default-difftool".cmd "code --wait --diff `$LOCAL `$REMOTE"
+```
+
+- bash 에서는 다음 커맨드를 사용한다.
+
+```bash
+git config --global diff.tool default-difftool
+git config --global difftool."default-difftool".cmd "code --wait --diff \$LOCAL \$REMOTE"
 ```
 
 ## Three Trees
