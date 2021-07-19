@@ -10,6 +10,8 @@ git config --global core.autocrlf input
 
 git config --global core.editor vim
 
+git config --global credential.helper 'cache --timeout=900'
+
 git config -l --show-origin
 git config -l --show-scope
 ```
