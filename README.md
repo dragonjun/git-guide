@@ -1,19 +1,57 @@
 # Git-Guide
 
-## 설정
+## Git & GitHub 설정
+
+Windows 10에 WSL와 Ubuntu를 설치하고 Git & GitHub 환경 설정하기
+
+### 전제 조건
+
+- WSL 설치
+- Ubuntu 설치
+
+### Windows 10에 Git for Windows 설치
+
+- [Git - Download for Windows](https://git-scm.com/download/win)
+
+### 최신 Git 버전 설치
+
+- [Git - Download for Linux and Unix](https://git-scm.com/download/linux)
 
 ```bash
-git config --global user.name "Yongjun Cho"
-git config --global user.email wphhffg@gmail.com
-git config --global init.defaultBranch main
-git config --global core.autocrlf input
+$ git --version
 
-git config --global core.editor vim
+$ sudo add-apt-repository ppa:git-core/ppa
+$ sudo apt update
+$ sudo apt upgrade
 
-git config --global credential.helper 'cache --timeout=900'
+$ git --version
+```
 
-git config -l --show-origin
-git config -l --show-scope
+### Git Credential Manager 설정
+
+- [Configuring WSL with Git for Windows](https://github.com/GitCredentialManager/git-credential-manager/blob/main/docs/wsl.md#configuring-wsl-with-git-for-windows-recommended)
+
+```bash
+$ git config --global credential.helper "/mnt/c/bin/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+```
+
+### 설정
+
+```bash
+$ git config --global user.name "Your Name"
+$ git config --global user.email "youremail@domain.com"
+
+$ git config --global init.defaultBranch main
+$ git config --global pull.rebase true
+
+$ git config --global core.editor "code --wait"
+$ git config --global credential.helper "/mnt/c/bin/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+```
+
+설정 확인
+
+```bash
+$ git config --list --show-origin --show-scope
 ```
 
 ### VS Code 를 Git 에디터로 사용하기
