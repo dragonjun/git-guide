@@ -37,6 +37,8 @@ $ git config --global credential.helper "/mnt/c/bin/Git/mingw64/libexec/git-core
 
 ### 설정
 
+- [Git - First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
 ```bash
 $ git config --global user.name "Your Name"
 $ git config --global user.email "youremail@domain.com"
