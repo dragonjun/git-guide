@@ -32,9 +32,11 @@ $ git config --global credential.helper "/mnt/c/bin/Git/mingw64/libexec/git-core
 
 ## References
 
+- [Git](https://git-scm.com/)
+- [Git for Windows](https://github.com/git-for-windows/git)
 - [Git - First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 - [Version Control in Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol)
-- [GitCredentialManager/git-credential-manager](https://github.com/GitCredentialManager/git-credential-manager)
+- [Git Credential Manager](https://github.com/GitCredentialManager/git-credential-manager)
 - [Git - gitcredentials Documentation](https://git-scm.com/docs/gitcredentials)
 - [Git - git-credential-cache Documentation](https://git-scm.com/docs/git-credential-cache)
 - [cli/cli: GitHub’s official command line tool](https://github.com/cli/cli)
