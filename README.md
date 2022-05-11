@@ -33,6 +33,8 @@ $ git --version
 
 ```bash
 $ git config --global credential.helper "/mnt/c/bin/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+# Git for Windows 2.36.1 부터는
+$ git config --global credential.helper "/mnt/c/bin/Git/mingw64/bin/git-credential-manager-core.exe"
 ```
 
 ### 설정
