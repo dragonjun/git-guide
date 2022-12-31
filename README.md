@@ -49,7 +49,7 @@ $ git config --global init.defaultBranch main
 $ git config --global pull.rebase true
 
 $ git config --global core.editor "code --wait"
-$ git config --global credential.helper "/mnt/c/bin/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+$ git config --global credential.helper "/mnt/c/bin/Git/mingw64/bin/git-credential-manager-core.exe"
 ```
 
 설정 확인

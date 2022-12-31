@@ -25,7 +25,7 @@ git config --list --show-scope --show-origin
 $ git config --global credential.helper 'cache --timeout=86400'
 
 # Git Credential Manager for WSL & GitHub
-$ git config --global credential.helper "/mnt/c/bin/Git/mingw64/libexec/git-core/git-credential-manager-core.exe"
+$ git config --global credential.helper "/mnt/c/bin/Git/mingw64/bin/git-credential-manager-core.exe"
 ```
 
 ---
